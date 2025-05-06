@@ -18,7 +18,7 @@
 
 @layer base {
   html {
-    font-size: clamp(0.8em, 0.4em + 3vw, 3em);
+    font-size: clamp(1.2em, 0.2em + 1.8vw, 2em);
   }
   body {
     font-family: "Overpass", system-ui, Avenir, Helvetica, Arial, sans-serif;
