@@ -36,17 +36,18 @@
   p {
     font-size: 0.8rem;
   }
-  input[type="radio"] {
+  fieldset input[type="radio"] {
     appearance: none;
-  }
-  input[type="radio"]:checked {
-    @apply bg-(--white) text-(--grey-blue);
+    cursor: pointer;
   }
 }
 
 @layer components {
   .card {
-    @apply rounded-xl bg-(--grey-blue) max-w-[20rem] flex flex-col items-start gap-3 p-5 m-auto;
+    @apply rounded-xl bg-(--grey-blue) max-w-[20rem] flex flex-col m-auto;
+  }
+  .rating {
+    @apply items-start gap-3 p-5;
   }
 
   .btn {
@@ -54,6 +55,6 @@
   }
 
   .btn-radio {
-    @apply bg-(--grey-dark)/25 size-9 text-[.9rem];
+    @apply bg-(--grey-dark)/25 size-9 text-[.9rem] has-checked:bg-(--white) has-checked:text-(--grey-dark) cursor-pointer;
   }
 }
