@@ -2,7 +2,7 @@
 
 :root {
   /* primary */
-  --primary: hsl(25, 97%, 53%);
+  --primary: #fb7413;
 
   /* neutral */
   --white: hsl(0, 100%, 100%);
@@ -44,7 +44,7 @@
 
 @layer components {
   .card {
-    @apply rounded-xl bg-(--grey-blue) max-w-[20rem] flex flex-col m-auto;
+    @apply rounded-xl bg-(--grey-blue) max-w-[20rem] flex flex-col m-auto bg-gradient-to-b from-(--grey-blue) to-gray-900/50;
   }
   .rating {
     @apply items-start gap-3 p-5;
