@@ -1,7 +1,7 @@
 function RatingButton({ value }) {
   return (
     <label
-      className="btn btn-radio flex items-center justify-center hover:bg-(--primary) hover:text-(--grey-dark) focus-within:bg-(--primary) focus-within:text-(--grey-dark) "
+      className="btn btn-radio flex items-center justify-center hover:bg-(--primary) hover:text-(--grey-dark) focus-within:bg-(--white  ) focus-within:text-(--grey-dark) pt-1"
       htmlFor={"rating" + value}
       onClick={(e) => {
         if (!e.target.value) return;
