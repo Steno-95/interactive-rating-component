@@ -10,6 +10,7 @@ function RatingButton({ value }) {
         name="ratings"
         value={value}
         required
+        aria-label={`Rate ${value}`}
       />
       {value}
     </label>
