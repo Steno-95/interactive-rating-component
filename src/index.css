@@ -44,7 +44,7 @@
 
 @layer components {
   .card {
-    @apply rounded-xl bg-(--grey-blue) max-w-[20rem] flex flex-col m-auto bg-gradient-to-b from-(--grey-blue) to-gray-900/50;
+    @apply rounded-xl bg-(--grey-blue) max-w-[20rem] flex flex-col m-auto bg-gradient-to-b from-(--grey-blue) to-(--grey-dark)/50;
   }
   .rating {
     @apply items-start gap-3 p-5;
