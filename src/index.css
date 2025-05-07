@@ -51,7 +51,7 @@
   }
 
   .btn {
-    @apply rounded-full;
+    @apply rounded-full focus:outline-(--primary) focus:outline-1;
   }
 
   .btn-radio {
