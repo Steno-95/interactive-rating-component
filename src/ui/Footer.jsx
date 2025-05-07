@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <footer className="text-center text-[1rem] md:text-[1.5rem] text-[var(--outfocus-color)] mt-10 min-w-[fit]">
+    <footer className="text-center text-[.7rem] text-(--grey) mt-10 min-w-[fit]">
       Challenge by{" "}
       <a
-        className="text-blue-600 hover:text-(--active-text) focus:text-(--active-text)"
+        className="text-orange-200 hover:text-(--primary) focus:text-(--primary)"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
       >
@@ -11,7 +11,7 @@ function Footer() {
       </a>
       . Coded by{" "}
       <a
-        className="text-blue-600 hover:text-(--active-text) focus:text-(--active-text)"
+        className="text-orange-200 hover:text-(--primary) focus:text-(--primary)"
         href="https://github.com/Steno-95"
         title="The link will redirect to the github of Stefano Lezzi"
       >

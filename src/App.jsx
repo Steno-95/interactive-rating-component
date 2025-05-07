@@ -1,6 +1,7 @@
 import { useState } from "react";
 import RatingCard from "./components/Rating/RatingCard";
 import TYCard from "./components/ThankYouCard/TYCard";
+import Footer from "./ui/Footer";
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
@@ -19,6 +20,7 @@ function App() {
     <main className="min-h-screen flex flex-col">
       {!submitted && <RatingCard onSubmit={handleOnSubmit} />}
       {submitted && <TYCard onReset={handleReset} rating={rating} />}
+      <Footer />
     </main>
   );
 }
