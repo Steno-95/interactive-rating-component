@@ -3,12 +3,14 @@ function RatingButton({ value }) {
     <label
       className="btn btn-radio flex items-center justify-center hover:bg-(--primary) hover:text-(--grey-dark) focus-within:bg-(--white) focus-within:text-(--grey-dark) pt-1"
       htmlFor={"rating" + value}
-      onClick={(e) => {
-        if (!e.target.value) return;
-        console.log(e.target);
-      }}
     >
-      <input type="radio" id={"rating" + value} name="ratings" value={value} />
+      <input
+        type="radio"
+        id={"rating" + value}
+        name="ratings"
+        value={value}
+        required
+      />
       {value}
     </label>
   );
