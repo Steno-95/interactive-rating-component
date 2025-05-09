@@ -9,7 +9,7 @@ function App() {
 
   function handleOnSubmit(e) {
     e.preventDefault();
-    console.log(e.target.ratings.value);
+
     setRating(e.target.ratings.value);
     setSubmitted(true);
   }
